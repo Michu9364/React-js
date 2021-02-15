@@ -19,7 +19,7 @@ function App() {
           <input type='text' id="input" name='mail' onChange={email =>setemail(email.target.value)} />
       
           <div>
-          <input type="button" value="Potwierdź" onclick="sayHi()" />
+          <input type="button" value="Potwierdź" onclick="confirm()" />
           </div>
 
         </div>
