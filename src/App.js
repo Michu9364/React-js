@@ -10,16 +10,16 @@ function App() {
       <div className="split left">
         <div className="centeredtext">
           <div>Imię</div>
-          <input type='text' name='firstname' onChange={firstname =>setfirstname(firstname.target.value)} />
+          <input type='text' id="input" name='firstname' onChange={name =>setfirstname(name.target.value)} />
           
           <div>Nazwisko</div>
-          <input type='text' name='pass' onChange={name =>setname(name.target.value)} />
+          <input type='text' id="input" name='pass' onChange={pass =>setname(pass.target.value)} />
 
           <div>Email</div>
-          <input type='text' name='mail' onChange={email =>setemail(email.target.value)} />
+          <input type='text' id="input" name='mail' onChange={email =>setemail(email.target.value)} />
       
           <div>
-          <input type="submit" value="Zatwierdź" />
+          <input type="button" value="Potwierdź" onclick="sayHi()" />
           </div>
 
         </div>
@@ -29,9 +29,9 @@ function App() {
           <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar man" />
         </div>
         <div className="textinfo">
-            <div>Imię: {firstname}</div>
-            <div>Nazwisko: {name}</div>
-            <div>Email: {email}</div>
+            <div name="firstname">Imię: {firstname}</div>
+            <div name="pass">Nazwisko: {name}</div>
+            <div name="mail">Email: {email}</div>
           </div>
       </div>
     </div>
