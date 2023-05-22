@@ -1,1 +1,1 @@
-Zadanie react Michał Olearczyk 3cT
+Example of react exercise
